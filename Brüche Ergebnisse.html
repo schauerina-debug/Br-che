@@ -64,11 +64,15 @@
   .pw-box input[type="password"] { width: 100%; padding: 0.6rem 0.8rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; outline: none; margin-bottom: 0.75rem; }
   .pw-box input[type="password"]:focus { border-color: var(--primary); }
   .pw-hidden { display: none; }
+  .nav-top { position: fixed; top: 0.75rem; right: 0.75rem; z-index: 1001; }
+  .nav-top a { display: inline-block; background: white; border: 1px solid var(--border); border-radius: 8px; padding: 0.4rem 0.8rem; font-size: 0.8rem; color: #6b7280; text-decoration: none; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .nav-top a:hover { color: var(--primary); }
 </style>
 <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore-compat.js"></script>
 </head>
 <body>
+<div class="nav-top"><a href="index-brueche.html">&larr; Startseite</a></div>
 <div class="pw-overlay" id="pwOverlay">
   <div class="pw-box">
     <h2>Passwort geschützt</h2>
